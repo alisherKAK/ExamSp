@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamSp", "ExamSp\ExamSp.csproj", "{425FE736-6D4C-49CD-B7D7-FC2284E297EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamSp.Models", "ExamSp.Models\ExamSp.Models.csproj", "{D4AA54A0-58FA-4026-AED0-FFD10992BC2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamSp.DataAccess", "ExamSp.DataAccess\ExamSp.DataAccess.csproj", "{0FD95874-9AC0-4E30-ACCF-834814169E9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{425FE736-6D4C-49CD-B7D7-FC2284E297EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{425FE736-6D4C-49CD-B7D7-FC2284E297EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{425FE736-6D4C-49CD-B7D7-FC2284E297EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4AA54A0-58FA-4026-AED0-FFD10992BC2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4AA54A0-58FA-4026-AED0-FFD10992BC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4AA54A0-58FA-4026-AED0-FFD10992BC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4AA54A0-58FA-4026-AED0-FFD10992BC2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FD95874-9AC0-4E30-ACCF-834814169E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FD95874-9AC0-4E30-ACCF-834814169E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FD95874-9AC0-4E30-ACCF-834814169E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FD95874-9AC0-4E30-ACCF-834814169E9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

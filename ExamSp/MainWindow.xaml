@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExamSp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MainWindow" Height="450" Width="728.701">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="334*"/>
+            <ColumnDefinition Width="387*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="loginTextBox" materialDesign:HintAssist.Hint="Login" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10,-24,185,368" Grid.Column="1" RenderTransformOrigin="0.481,0.263" />
+        <PasswordBox Name="passwordTextBox" materialDesign:HintAssist.Hint="Password" materialDesign:HintAssist.Foreground="Green" materialDesign:TextFieldAssist.UnderlineBrush="Green" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="9,51,186,293" Grid.Column="1" />
+        <TextBox Name="emailTextBox" materialDesign:HintAssist.Hint="Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="9,126,186,218" Grid.Column="1" />
+        <TextBox Name="phoneTextBox" materialDesign:HintAssist.Hint="Phone" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="9,201,186,143" Grid.Column="1" />
+        <TextBox Name="addressTextBox" materialDesign:HintAssist.Hint="Address" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="9,276,186,68" Grid.Column="1" />
+        <Button Name="createAndSaveButton" Click="CreateAndSaveButtonClick" Content="Create And Save" Grid.Column="1" HorizontalAlignment="Left" Margin="10,377,0,0" VerticalAlignment="Top" Width="154"/>
+        <TextBox Name="integerNumberTextBox" materialDesign:HintAssist.Hint="Integer number" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10,10,151,334" KeyDown="IntegerNumberTextBoxKeyDown" />
+        <Button Name="fillArrayButton" Click="FillArrayButtonClick" Content="Fill Array" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Width="131"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="121,157,0,0" VerticalAlignment="Top" Width="428" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
     </Grid>
 </Window>
